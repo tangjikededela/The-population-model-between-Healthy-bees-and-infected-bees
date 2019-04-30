@@ -34,6 +34,7 @@ end
  
 time=1:1:t_end;%figures are in here
 figure(1);%Hb and Hi vs time
+subplot(1,2,1);
 plot(time,Hb,'r-');
 hold on;
 plot(time,Hi,'b--');
@@ -41,8 +42,7 @@ title('Hb&Hi vs time');
 xlabel('Number of Bees');
 ylabel('Time');
 legend('Hb','Hi');
-
-figure(2);%Hb vs Hi
+subplot(1,2,2);
 plot(Hb,Hi);
 title('Hb vs Hi');
 xlabel('Number of Hb');
