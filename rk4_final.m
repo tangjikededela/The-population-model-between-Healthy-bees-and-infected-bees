@@ -39,8 +39,8 @@ plot(time,Hb,'r-');
 hold on;
 plot(time,Hi,'b--');
 title('Hb&Hi vs time');
-xlabel('Number of Bees');
-ylabel('Time');
+xlabel('Time');
+ylabel('Number of Bees');
 legend('Hb','Hi');
 subplot(1,2,2);
 plot(Hb,Hi);
@@ -48,6 +48,6 @@ title('Hb vs Hi');
 xlabel('Number of Hb');
 ylabel('Number of Hi');
 
-for i=1:1:t_end
-fprintf('point is %8.4e %8.4e and the rate is %8.4e\n',Hb(i),Hi(i),Hb(i)/Hi(i) );
-end
+
+fprintf('point is %8.4e %8.4e, and the different is %8.4e and the rate is %8.4e\n',Hb(t_end),Hi(t_end),Hb(t_end)-Hi(t_end),Hb(t_end)/Hi(t_end) );
+
