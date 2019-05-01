@@ -38,8 +38,8 @@ plot(time,Hb,'r-');
 hold on;
 plot(time,Hi,'b--');
 title('Hb&Hi vs time');
-xlabel('Number of Bees');
-ylabel('Time');
+xlabel('Time');
+ylabel('Number of Bees');
 legend('Hb','Hi');
 
 figure(2);%Hb vs Hi
